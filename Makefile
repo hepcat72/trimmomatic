@@ -1,7 +1,7 @@
 # http://semver.org/
 VERSION := 0.33.0
 INSTALL := ${HOME}
-SOURCES := $(shell find src/ -name "*.java" | sed 's|src/||g')
+SOURCES := $(shell find src/ -name "*.java" | sed 's|src/*||g')
 
 all:
 	rm -rf classes; mkdir -p classes/; \
